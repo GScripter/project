@@ -1,3 +1,4 @@
+/* Reset */
 *, *:after, *:before, ul, a{
     margin: 0;
     padding: 0;
@@ -25,6 +26,7 @@
     font-size: 10px;
 }
 
+/* Notify */
 .container-notify{
     position: fixed;
     bottom: 10px;
@@ -100,6 +102,10 @@
 }
 
 /* Cards */
+.cards{
+    margin-bottom: 40px;
+}
+
 .card{
     width: 100% !important;
     margin-top: 10px;
@@ -134,7 +140,7 @@
 .card p{
     opacity: .7;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Número de linhas que deseja exibir */
+    -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -152,11 +158,16 @@
     border-radius: 5px;
 }
 
-.cards ul li{
+/* Recommended */
+.recommended{
+    margin-bottom: 40px;
+}
+
+.recommended ul li{
     margin: 10px 0;
 }
 
-.cards ul li .arrow{
+.recommended ul li .arrow{
     border: 3px solid #E5E5E5;
     width: 30px;
     height: 30px;
@@ -164,7 +175,7 @@
     font-size: 20px;
 }
 
-.cards ul li a{
+.recommended ul li a{
     display: block;
     align-items: center;
     background-color: #15803D;
@@ -174,15 +185,16 @@
     text-decoration: none;
 }
 
-.cards ul li a:hover{
+.recommended ul li a:hover{
     background-color: #3E643B !important;
 }
 
-.cards ul li a:hover{
+.recommended ul li a:hover{
     color: #fff;
 }
 
 
+/* Medias */
 @media (min-width: 880px){
     .container-notify{
         max-width: 430px;
@@ -212,7 +224,7 @@
     .notify h5{
         font-size: 11px;
         margin-bottom: 5px;
-        -webkit-line-clamp: 2; /* Número de linhas que deseja exibir */
+        -webkit-line-clamp: 2; 
     }
 
     .notify p{
