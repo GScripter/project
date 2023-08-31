@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none !important;
-    list-style: none;
 }
 
 .line-green{
@@ -20,6 +19,7 @@
 
 .btn-success:hover{
     background-color: #3E643B !important;
+    color: #FFF;
 }
 
 .notify .obs{
@@ -112,15 +112,6 @@
     align-items: center;
 }
 
-.card .obs{
-    font-size: 13px;
-}
-
-.card .btn{
-    margin-top: -20px;
-    min-width: 200px;
-}
-
 .card-img-top{
     max-width: 360px;
     border-radius: 5px;
@@ -129,11 +120,11 @@
 
 .card-body{
     margin: 0 8px;
-    padding: 5px 0;
+    padding: 5px 10px;;
 }
 
 .card-title{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -144,6 +135,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 15px;
 }
 
 .card .shields{
@@ -156,6 +148,28 @@
     padding: 5px 10px;
     margin: 0 5px;;
     border-radius: 5px;
+}
+
+.btn-container {
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+}
+
+.btn-success{
+    display: block;
+    color: #fff;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.text{
+    margin-top: 5px;
+    font-size: 13px;
 }
 
 /* Recommended */
@@ -214,6 +228,11 @@
     .card{
         align-items: center;
     }
+
+    .cards .col-12{
+        width: 100%;
+        max-width: 450px;
+    }
 }
 
 @media (max-width: 360px){
@@ -247,3 +266,4 @@
         padding: 10px 5px 0 5px;
     }
 }
+
