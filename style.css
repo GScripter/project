@@ -245,6 +245,10 @@
         width: 100%;
         max-width: 100%;
     }
+
+    .card-body{
+        padding-top: 20px;
+    }
 }
 
 @media (max-width: 360px){
