@@ -72,7 +72,7 @@
     margin-bottom: 10px;
     margin-top: 5px;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Número de linhas que deseja exibir */
+    -webkit-line-clamp: 3; /* NÃºmero de linhas que deseja exibir */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -112,7 +112,7 @@
 
 .card{
     width: 100% !important;
-    margin-top: 10px;
+    margin: 0 !important;
     align-items: center;
 }
 
@@ -125,13 +125,12 @@
     max-width: 360px;
     border-radius: 5px;
     min-height: 100% !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 0px !important;
 }
 
 .card-body{
     margin: 0 8px;
-    padding: 5px 10px;;
-    margin-top: 5px;
+    padding: 0px 10px;
 }
 
 .card-body em{
@@ -181,11 +180,11 @@
     text-align: center;
     width: 100%;
     font-size: 15px !important;
-    margin-top: -15px;
+    margin-top: -10px;
 }
 
 .text{
-    margin: 5px !important;
+    margin: 12px 0 0 0 !important;
     font-size: 13px !important;
 }
 
@@ -246,10 +245,6 @@
         width: 100%;
         max-width: 100%;
     }
-
-    .card-body{
-        padding-top: 20px;
-    }
 }
 
 @media (max-width: 360px){
@@ -283,5 +278,3 @@
         padding: 10px 5px 0 5px;
     }
 }
-
-
