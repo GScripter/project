@@ -6,6 +6,10 @@
     text-decoration: none !important;
 }
 
+ins{
+    margin-left: -20px;
+}
+
 ol,
 ul {
   padding-left: 0 !important;
