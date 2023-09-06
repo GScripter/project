@@ -38,13 +38,32 @@ ul {
 /* Notify */
 .container-notify{
     position: fixed;
-    bottom: 10px;
     left: -100%;
     width: 97%;
     max-width: 450px;
     transition: .8s;
     background-color: #fff;
     z-index: 99;
+}
+
+.container-notify:nth-child(1){
+    bottom: 10px;
+}
+
+.container-notify:nth-child(2){
+    bottom: 180px;
+}
+
+.container-notify:nth-child(3){
+    bottom: 350px;
+}
+
+.container-notify:nth-child(4){
+    bottom: 520px;
+}
+
+.container-notify:nth-child(5){
+    bottom: 690px;
 }
 
 .notify{
