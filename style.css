@@ -6,8 +6,8 @@
     text-decoration: none !important;
 }
 
-ins{
-    margin-left: -20px;
+.adsbygoogle iframe{
+    max-width: 90% !important;
 }
 
 ol,
