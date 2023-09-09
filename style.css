@@ -6,11 +6,6 @@
     text-decoration: none !important;
 }
 
-.adsbygoogle iframe{
-    max-width: 90% !important;
-    min-width: 170px !important;
-}
-
 ol,
 ul {
   padding-left: 0 !important;
@@ -308,5 +303,12 @@ ul {
 
     .notify-body{
         padding: 10px 5px 0 5px;
+    }
+}
+
+@media (max-width: 800px){
+    .adsbygoogle iframe{
+        max-width: 90% !important;
+        min-width: 170px !important;
     }
 }
