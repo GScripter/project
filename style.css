@@ -307,8 +307,7 @@ ul {
 }
 
 @media (max-width: 800px){
-    .adsbygoogle iframe{
-        max-width: 90% !important;
-        min-width: 170px !important;
+    .adsbygoogle{
+        margin-left: -20px
     }
 }
