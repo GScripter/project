@@ -305,3 +305,9 @@ ul {
         padding: 10px 5px 0 5px;
     }
 }
+
+@media (max-width: 800px){
+    .adsbygoogle{
+        margin-left: -20px
+    }
+}
