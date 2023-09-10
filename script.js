@@ -1,3 +1,11 @@
+// Add a click event to all close buttons
+const closeButtons = document.querySelectorAll(".close");
+closeButtons.forEach((button) => {
+    button.addEventListener("click", (evt) => {
+        evt.target.parentNode.style.left = "-100%";
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const POPUPS = document.querySelectorAll('.container-notify');
 
@@ -8,14 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         document.getElementById("container-notifies").remove()
     }
-});
-
-// Add a click event to all close buttons
-const closeButtons = document.querySelectorAll(".close");
-closeButtons.forEach((button) => {
-    button.addEventListener("click", (evt) => {
-        evt.target.parentNode.style.left = "-100%";
-    });
 });
 
 // Add a click event to all close buttons
