@@ -154,7 +154,7 @@ ul {
 
 .card-body{
     margin: 0 8px;
-    padding: 0px 10px;
+    padding: 10px;
 }
 
 .card-body em{
@@ -271,6 +271,10 @@ ul {
 
     .cards .card-img-top{
         max-width: 360px;
+    }
+    
+    .card{
+    	padding: 10px;
     }
 }
 

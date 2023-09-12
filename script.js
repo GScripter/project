@@ -26,7 +26,7 @@ window.addEventListener("scroll", function() {
         const scrollPercentage =  (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
         if (scrollPercentage >= 50) {
             popupContainers.forEach((container) => {
-                container.style.left = "0px";
+                container.style.left = "5px";
             })
             contentLoaded = true;
         }
