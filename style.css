@@ -46,26 +46,6 @@ ul {
     z-index: 99;
 }
 
-.container-notify:nth-child(1){
-    bottom: 10px;
-}
-
-.container-notify:nth-child(2){
-    bottom: 180px;
-}
-
-.container-notify:nth-child(3){
-    bottom: 350px;
-}
-
-.container-notify:nth-child(4){
-    bottom: 520px;
-}
-
-.container-notify:nth-child(5){
-    bottom: 690px;
-}
-
 .notify{
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -315,3 +295,4 @@ ul {
         margin-left: -20px
     }
 }
+
