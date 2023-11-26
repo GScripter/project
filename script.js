@@ -53,24 +53,30 @@ window.addEventListener("scroll", function() {
 
 // cards_p
 let cards = [...document.getElementsByClassName("card-body")]
+
 cards.map(i => {
-    // Create a new tag (e.g., a <span>)
+    // Create new div elements
     const newTag = document.createElement('div');
     const newTag2 = document.createElement('div');
-    newTag.style = "margin-bottom: 20px; opacity: .7; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; font-size: 17px;"
-    newTag2.style = "margin: 12px 0 0 0 !important; font-size: 13px !important;opacity: .7;"
 
+    // Style the new div elements
+    newTag.style.cssText = "margin-bottom: 20px; opacity: .7; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; font-size: 17px;";
+    newTag2.style.cssText = "margin: 12px 0 0 0 !important; font-size: 13px !important; opacity: .7;";
+
+    // Get all paragraph elements within the card
     const ps = [...i.getElementsByTagName("p")]
 
+    // Iterate over the paragraph elements
     ps.map((el, index) => {
         if(index == 0){
             newTag.innerHTML = el.innerHTML;
-            i.insertBefore(newTag, el)
-            ps[0].remove()
-        }else{
+            i.insertBefore(newTag, el);
+        } else {
             newTag2.innerHTML = el.innerHTML;
-            i.getElementsByClassName("btn-container")[0].insertBefore(newTag2, el)
-            ps[1].remove()
+            i.getElementsByClassName("btn-container")[0].appendChild(newTag2);
         }
+
+        // Remove the paragraph element
+        el.remove();
     })
 })
