@@ -43,13 +43,34 @@ const popupContainers = [...document.querySelectorAll(".container-notify")]
 window.addEventListener("scroll", function() {
     if (contentLoaded == false) {
         const scrollPercentage =  (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-        if (scrollPercentage >= 50) {
+        if (scrollPercentage >= 43) {
             updatePopUp()
             contentLoaded = true;
         }
     }
 });
 
-window.addEventListener("resize", (evt) => {
-    updatePopUp()
+
+// cards_p
+let cards = [...document.getElementsByClassName("card-body")]
+cards.map(i => {
+    // Create a new tag (e.g., a <span>)
+    const newTag = document.createElement('div');
+    const newTag2 = document.createElement('div');
+    newTag.style = "margin-bottom: 20px; opacity: .7; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; font-size: 17px;"
+    newTag2.style = "margin: 12px 0 0 0 !important; font-size: 13px !important;opacity: .7;"
+
+    const ps = [...i.getElementsByTagName("p")]
+
+    ps.map((el, index) => {
+        if(index == 0){
+            newTag.innerHTML = el.innerHTML;
+            i.insertBefore(newTag, el)
+            ps[0].remove()
+        }else{
+            newTag2.innerHTML = el.innerHTML;
+            i.getElementsByClassName("btn-container")[0].insertBefore(newTag2, el)
+            ps[1].remove()
+        }
+    })
 })
